@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Renu | B.Tech IT Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: rgba(15, 23, 42, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 8%;
+            min-height: 80vh;
+        }
+
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        h2.section-title {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 850px;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 18px;
+            border: 1px solid #38bdf8;
+            border-radius: 20px;
+            color: #bae6fd;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Renu</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="hero">
+        <h1>Hi, I'm <span>Renu</span></h1>
+        <h2>B.Tech Information Technology Student</h2>
+
+        <p>
+            Passionate about software development, AI/ML and building
+            practical technology solutions to solve real-world problems.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        I am a B.Tech Information Technology student with an interest in
+        software development, artificial intelligence and web technologies.
+        I enjoy developing practical applications and learning new
+        technologies through real-world projects.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">AI / ML</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Parkers – Smart Parking Management System</h3>
+            <p>
+                Developed a smart parking management application that helps
+                users find and reserve available parking slots. Implemented
+                location-based parking visualization, parking zones and
+                slot booking functionality.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>TrustLens AI</h3>
+            <p>
+                Developed an AI-based insurance claim verification system
+                designed to identify potentially fraudulent claims through
+                image analysis and document validation.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>AI-Based Fetal Hypoxia Prediction</h3>
+            <p>
+                Ongoing project developing an AI-based clinical decision
+                support system for early prediction of fetal hypoxia using
+                Cardiotocography (CTG) data.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:renukarenu96977@gmail.com">
+            renukarenu96977@gmail.com
+        </a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/renuka280" target="_blank">
+            github.com/renuka280
+        </a>
+    </p>
+
+    <p>
+        Portfolio: renuka280.github.io
+    </p>
+</section>
+
+<footer>
+    © 2026 Renu. All Rights Reserved.
+</footer>
+
+</body>
+</html>
